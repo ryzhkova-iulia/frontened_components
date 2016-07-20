@@ -1,0 +1,41 @@
+
+.rate .rate__item_active,
+.rate__item_active + .rate__item,
+.rate__item_active + .rate__item + .rate__item,
+.rate__item_active + .rate__item + .rate__item + .rate__item,
+.rate__item_active + .rate__item + .rate__item + .rate__item  + .rate__item,
+.rate.rate_edit .rate__item:hover,
+.rate_edit .rate__item:hover + .rate__item,
+.rate_edit .rate__item:hover + .rate__item + .rate__item,
+.rate_edit .rate__item:hover + .rate__item + .rate__item + .rate__item,
+.rate_edit .rate__item:hover + .rate__item + .rate__item + .rate__item  + .rate__item
+{
+  background url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAQCAYAAADwMZRfAAABRklEQVQ4jZXSsUtVYRjH8c+xk3QxRFxcbE4nISkoECRwyyVC1AaXsAShwb+kFnNwFRxqcXEoHCJoKggCXUVyVTDPc2t4G/Sq53jvMX/wcPg9v4cv7/u8J0vH/kcvsdI2aSRZOrwScB9bGMTBpbQ36dLkilrQ1KNprm2OLO3WnqIPv9DADoaRShN3klz9TuZOAXAXj/GpOpQ71o2eDpBXFb+Ib6XO90yWPruFN5ivPVNnRZY2z8xzvMPtawB+YiZL70vNIXxwssA6JSxjydMUuaNSuI0H2MB4DWQG6y2T+31p4Mj5i3TSjYumHWTAyV9ap1mstUyXgkpNKs76SWFV4aHCxwszEwr9ihYkqNST0+8PYUx4IXwVJoRpYV/oFp6J9pCG8EhYEkaFL5V8XRgW3gpTLUjuT+mufbiHvZp9HOI1RnATf/8BTQ56aLFtQBAAAAAASUVORK5CYII=') no-repeat center center;
+}
+
+.rate__item,
+.rate_edit:hover .rate__item,
+.rate_edit:hover .rate__item_active
+{
+  background url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAQCAYAAADwMZRfAAABR0lEQVQ4jY3TPUtbYRjG8V/iqRDsEFykn8BmEgQ7dCpiNwsOpTZdDjgounTIN2iXLqXUxbZItwpZSqFLFhdBty6FBj+AsygIOXmBOJyTeDienuSCh+ftfv5c8Fx3qd1um0I7+Jp3UavVBIPBYBJgBR/RxFVeQdDv9ydBdjGHEJ9zIb1erwhQxesUbB/De5But1sECVFJ1otYxXG2qNRqtWYTu3k6w+PU/he28pyU8QHbRZYSbSQjrSiIoigSf+EJvuDhFLCR/qEedDqd0cEP/MFP1CY8HuIAjTAMoyA2MtY5nuA3nhVA6uLcgCwEbtz9yP80k97kQRbEKS3SGxyNITk5eYFysh7iOw7xHmvJ+XPM45L8xK4n81/s4TT1cBOf8Agv8Y37vVPBUzTEEc92ZxMtvMOrMSTTxVUs4yJrL6VrvMUSHqB/C8T0XRzHIp/jAAAAAElFTkSuQmCC') no-repeat center center;
+}
+
+
+.rate {
+  display inline-block;
+
+ &__item {
+   width 17px;
+   height 16px;
+   text-decoration none;
+   display inline-block;
+   float: right;
+   cursor default;
+  }
+
+   &_edit {
+     .rate__item {
+        cursor pointer;
+      }
+   }
+}
